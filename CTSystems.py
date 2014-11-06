@@ -1,6 +1,10 @@
 #Christina Chan
 #Laura Brooks
 
+# Queen's University
+# CISC 327: Software Quality Assurance
+# Create the front end for a banking system
+# automate testing
 
 import Queue
 import re
@@ -52,14 +56,16 @@ def getAmount(mode):
             return -1
 
 def getName():
-        accountName = raw_input("Enter account name:\n")
-        accountName = accountName.strip()  
-        accountName = pad("name", accountName)
-        if re.match('^.{15}$', accountName):
-                return accountName
-        else:
-                print "Error: invalid account name"
-                return 0
+    # get account name from standard input
+    # check formatting
+    accountName = raw_input("Enter account name:\n")
+    accountName = accountName.strip()  
+    accountName = pad("name", accountName)
+    if re.match('^.{15}$', accountName):
+            return accountName
+    else:
+            print "Error: invalid account name"
+            return 0
 
 def create(list):
     # only in Agent mode

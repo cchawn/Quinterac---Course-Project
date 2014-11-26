@@ -1,8 +1,11 @@
 #!/bin/bash
 
+# CHRISTINA CHAN
+# LAURA BROOKS
+
 # daily script
 
-# runs our front end over a set of transactions in SESH
+# runs our front end over a set of transactions in SESH directory
 # saves Transaction Summary files to TRANS_SUM directory
 count=0
 for i in ./SESH/*.txt
@@ -16,7 +19,8 @@ do
 	cp ./transactionSummary.txt ./TRANS_SUM/sum$count.txt
 done
 
-# merge Transaction Summary files with python script
+# merge transation summary files
+# time-stamp and savea  copy of orignial file
 now=$(date +"%T")
 cat ./TRANS_SUM/sum*.txt > ./mergedTransactions.txt
 cp ./mergedTransactions.txt ./mergedTransactions_$now.txt

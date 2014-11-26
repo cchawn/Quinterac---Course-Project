@@ -1,3 +1,5 @@
+# CHRISTINA CHAN
+# LAURA BROOKS
 
 import Queue
 import re
@@ -169,7 +171,7 @@ def main():
         # where the action happens
 
     while True:
-        try:
+        try: # so we don't fall off end of file
                 loginState = 0
                 q = Queue.Queue()
                 # store the information that will be processed at logout (as strings)

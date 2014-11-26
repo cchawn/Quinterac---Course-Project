@@ -1,9 +1,14 @@
 #!/bin/bash
 
+# CHRISTINA CHAN
+# LAURA BROOKS
+
 # weekly script
 
 # run daily script 5 times (with different transactions)
 # use masterAccounts + validAccounts from previous day
+# information for each day is located in it's own directory
+
 cd 1_MON
 ../daily.sh
 cd ..

@@ -1,3 +1,6 @@
+# CHRISTINA CHAN
+# LAURA BROOKS
+
 def mergeTransactions():
 	#Merges the transaction summary file to the end of the mergedTransactions file
 	transactionFile = open("transactionSummary.txt",'r')
